@@ -13,4 +13,5 @@ Example usage:
 ```bash
 cat delegated-ripencc-latest | ripe_ncc_extract.py --ipv4 -c BY > ripe4.txt
 cat mylist4.txt ripe4.txt | strip_bogons.py | supernets.py > result4.txt
+cat result4.txt | count_ips.py
 ```
